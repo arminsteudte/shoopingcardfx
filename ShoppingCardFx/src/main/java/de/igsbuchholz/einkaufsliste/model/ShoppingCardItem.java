@@ -16,7 +16,7 @@ public class ShoppingCardItem {
 	public void check() {
 		this.checked = true;
 	}
-	
+
 	public void uncheck() {
 		this.checked = false;
 	}
@@ -27,6 +27,6 @@ public class ShoppingCardItem {
 
 	public String getDescription() {
 		return description;
-	}	
+	}
 
 }

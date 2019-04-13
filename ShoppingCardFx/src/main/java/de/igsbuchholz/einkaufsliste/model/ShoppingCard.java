@@ -13,6 +13,10 @@ public class ShoppingCard {
 		card.add(newItem);
 	}
 	
+	public boolean containsItem(String description) {
+		return card.stream().map(i -> i.getDescription()).anyMatch(s -> s.equals(description));
+	}
+	
 	public boolean removeItem(String description) {
 		boolean removed = false;
 		Optional<ShoppingCardItem> maybeFirst = card.stream().filter(item -> description.equals(item.getDescription())).findFirst();
