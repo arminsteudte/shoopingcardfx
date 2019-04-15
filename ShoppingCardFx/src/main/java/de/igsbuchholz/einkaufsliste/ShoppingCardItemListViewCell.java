@@ -41,10 +41,19 @@ public class ShoppingCardItemListViewCell extends ListCell<ShoppingCardItem> {
 				}
 
 			}
-			
+
 			label.setText(item.getDescription());
 			checkbox.setSelected(item.isChecked());
-			
+			checkbox.setOnMouseClicked(mouseEvent -> {
+				if (item.isChecked()) {
+					item.setChecked(false);
+
+				} else {
+					item.setChecked(true);
+				}
+				checkbox.setSelected(item.isChecked());
+			});
+
 			setText(null);
 			setGraphic(gridPane);
 

@@ -32,6 +32,10 @@ public class ShoppingCard {
 		}
 		return removed;
 	}
+	
+	public void clearCard() {
+		observableCard.clear();
+	}
 
 	public ObservableList<ShoppingCardItem> getObservableCard() {
 		return observableCard;

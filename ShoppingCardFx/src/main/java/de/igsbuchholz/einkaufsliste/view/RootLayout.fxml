@@ -9,7 +9,7 @@
 <AnchorPane prefHeight="421.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.igsbuchholz.einkaufsliste.ShoppingCardController">
    <children>
       <ListView fx:id="lvShoppingCard" layoutX="43.0" layoutY="33.0" prefHeight="334.0" prefWidth="257.0" />
-      <TextField fx:id="tfItem" layoutX="331.0" layoutY="68.0" prefHeight="25.0" prefWidth="215.0" />
+      <TextField fx:id="tfItem" layoutX="331.0" layoutY="68.0" onKeyPressed="#onTextFieldEnterPressed" prefHeight="25.0" prefWidth="215.0" />
       <Label layoutX="331.0" layoutY="44.0" text="Eintrag:" />
       <Button layoutX="331.0" layoutY="107.0" mnemonicParsing="false" onMouseClicked="#addItemToCard" text="Hinzufügen" />
       <Button layoutX="43.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#clearShoppingCard" text="Liste leeren" />
