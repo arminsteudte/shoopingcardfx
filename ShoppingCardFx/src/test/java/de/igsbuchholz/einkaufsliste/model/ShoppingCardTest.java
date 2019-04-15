@@ -7,7 +7,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ShoppingCardTest extends ShoppingCard {
+public class ShoppingCardTest {
 
 	private ShoppingCard card;
 
